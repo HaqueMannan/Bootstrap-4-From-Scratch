@@ -1,0 +1,80 @@
+Section 1.1 Introduction & Setup:
+
+--------------------------------------
+Sandbox Environment
+--------------------------------------
+The bootstrap_sandbox folder contains all the html base files. We will use the base files and update each file as we learn bootstrap 4 from scratch.
+
+
+--------------------------------------
+What is Bootstrap & Why use It?
+--------------------------------------
+- Open source front-end (UI) framework for fast web development.
+- Sometime referred to as a CSS framework.
+- Pre-made HTML/CSS templates & classes.
+- Built-in JavaScript widgets & plugins.
+- Mobile first, responsive layout.
+
+
+--------------------------------------
+Advantages of Bootstrap
+--------------------------------------
+- Browser compatibility (CSS to be compatible on all browsers).
+- Promotes faster development.
+- Good for devs that lack design/UI skills.
+- Easy to learn.
+- Responsive layouts.
+
+
+--------------------------------------
+Ways to Install/Use Bootstrap
+--------------------------------------
+- Include the Content Delivery Netork (CDN).
+- Download and include the files from https://getbootstrap.com/
+- Package Managers - Node Package Manager(NPM)/Yarn
+
+(Note: CDN is recommended as it is really fast as files are served from high capacity infrastructures, it doesn't bog up your server and it can boost performance and save money. Unless your compiling your own CSS from SASS a CND is the way to go. If your running locally without an internet connection then you would want to download the boostrap files as the CDN will not work without an internet connection.
+NPM/Yarn is a little more complicated to install as you will have to do it through the command line - this is more beneficial for more advance developers, where you want to compile your own versions or you want to merge files together and do certain task like that.)
+
+
+--------------------------------------
+UI Utilities
+--------------------------------------
+- Grid System (Flexbox).
+- Text & Typography Classes.
+- Positioning Classes (block & inline block).
+- Spacing Classes (margin & padding).
+- Sizing Classes (width & height).
+- Alignment (for text and other elements).
+- Colours (for backgrounds, text and buttons etc.)
+- Images Classes.
+- Responsive Utilities.
+- Shadows Classes.
+
+
+--------------------------------------
+CSS Components
+--------------------------------------
+- Forms & Input Groups.
+- Tables.
+- List Groups.
+- Cards.
+- Progress Bars.
+- Alerts.
+- Navbar & Menus
+- Buttons & Button Groups.
+- Pagination.
+- Media Objects.
+- Jumbotron.
+- Badges.
+
+
+--------------------------------------
+JavaScript Widgets
+--------------------------------------
+- Carousel Slider.
+- Collapsible Accordion.
+- Modals.
+- Tooltips.
+- Popovers.
+- ScrollSpy.
