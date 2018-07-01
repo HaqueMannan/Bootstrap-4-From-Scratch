@@ -1,0 +1,74 @@
+Section 2.2 Text Alignment & Display:
+
+--------------------------------------
+Text Alignment Classes:
+--------------------------------------
+- To make the text even on both sides i.e. justified text alignment we can use the class:
+
+   class="text-justify"
+
+
+- We can align the text either to the left, right or centre using the classes below:
+
+   class="text-left"
+   class="text-center"
+   class="text-right"
+
+
+- We have responsive alignment, where we can align the text based on the screen size. In bootstrap we have 4 different screen sizes which are small (sm), medium (md), large (lg) and extra-large (xl). This will align the text depending on the breakpoints for the various screen size. Again we can align the text left, right or center:
+
+   class="text-sm-right"
+   class="text-md-right"
+   class="text-lg-right"
+   class="text-xl-right"
+
+   class="text-sm-left"
+   class="text-md-left"
+   class="text-lg-left"
+   class="text-xl-left"
+
+   class="text-sm-center"
+   class="text-md-center"
+   class="text-lg-center"
+   class="text-xl-center"
+
+Note: for really small screens, you would want to use the standard text alignment of left, right and center.
+
+
+- We can vertically align text. Notice in the bootstrap_sandbox html file we are using <span> elements which are inline elements i.e. all sit vertically on the html page and not on separate lines i.e. block elements. These classes allows us to align the text in the vertical space.
+
+   class="align-baseline"
+   class="align-top"
+   class="align-bottom"
+   class="align-middle"
+   class="align-text-top"
+   class="align-text-bottom"
+
+
+- You should be familiar with block and inline elements in HTML. Block level elements container takes up the whole line across the page regardless how much content is within the block level element. Block level elements include <div> <h1> <p> etc. You will notice that if we had two <h1> elements the would appear on two separate lines as each block element will take up the whole line across the page.
+Inline elements in contrast takes up what is within the container i.e. does not go all the way across the page. Therefore we can have multiple inline elements sitting next to each other on the same line because the inline container is as big as the content within the inline element. An example of an inline element is a <span> tag element.
+
+- To override the default block/inline level of a html element we can use the class which will convert them from the default:
+
+   class="d-inline"
+   class="d-block"
+
+- Note: we added bg-success, bg-primary and bg-warning to add colour to the element container background colour. This is to help visually represent the overriding of the default block/inline level using the bootstrap classes.
+
+- We can have inline blocks which allows html elements to have their block properties but allows multile block elements to sit inline with each other. The below example will make the <div> elements inline but the content within the div i.e. the <h3> and the text will retain their block element.
+
+   class="d-inline-block"
+
+   Example:
+   <div class="d-inline-block">
+      <h3>Box1</h3>
+      This is inline
+   </div>
+   <div class="d-inline-block">
+      <h3>Box2</h3>
+      This is inline
+   </div>
+
+
+
+Please refer to the 2_2_text_alignment_display.html markup within the bootstrap_sandbox folder for examples of the above. To view what these would look like open the html file in your browser.
