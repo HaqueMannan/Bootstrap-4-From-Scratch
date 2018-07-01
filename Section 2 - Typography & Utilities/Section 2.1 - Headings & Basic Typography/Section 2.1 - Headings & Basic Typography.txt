@@ -1,0 +1,109 @@
+Section 2.1 Headings & Basic Typography:
+
+--------------------------------------
+Headings
+--------------------------------------
+- Bootstrap allows us to have a semantic heading tag but with the sizing of another heading element using the class property. For example if we want a semantic <h5> element to have the size of a <h1> or <h2> or any other heading element we simply add the class as seen below:
+
+   class="h1"
+   class="h2"
+   class="h3"
+   class="h4"
+   class="h5"
+   class="h6"
+
+   Example:
+   <h5 class="h1"></h5>
+
+
+- The display headings classes are used to make the headings look a little more prominent i.e. they are good for showcase areas or hero blocks etc. To add a display heading class we use the below:
+
+   class="display-1"
+   class="display-2"
+   class="display-3"
+   class="display-4"
+
+   Example:
+   <h1 class="display-1"><h1>
+
+
+--------------------------------------
+Basic Typography
+--------------------------------------
+- If you want to make a paragraph more prominent you can use the lead class:
+
+   class="lead"
+
+   Example:
+   <p class="lead"></p>
+
+- To give a monospace typography you can use the class:
+
+   class="text-monospace"
+
+   Example:
+   <p class="text-monospace"></p>
+
+- To add style classes to make the text bold, normal and italic without using the <strong> or <em> <i> <b> etc. tags within our markup. The style classes we can use are:
+
+   class="font-weight-bold"
+   class="font-weight-normal"
+   class="font-weight-italic"
+
+   Example:
+   <p class="font-weight-bold"></p>
+
+- Text Transforms classes allows us to transform the text to uppercase, lowercase and proper case text:
+
+   class="text-lowercase"
+   class="text-uppercase"
+   class="text-capitalize"
+
+   <p class="text-lowercase"></p>
+
+- Block-quotes classes makes the text look a little more prominent. These gives the text a look and feel of a quote or reference.
+
+   class="blockquote"
+   class="blockquote text-right"
+   class="blockquote-footer"
+
+   Example:
+   <blockquote class="blockquote text-right">
+      <footer class=blockquote-footer></footer>
+   </blockquote>
+
+- If you wanted to truncate a long paragraph to one line we can use the bootstrap class. This will truncate the long paragraph to one line and add ... at the end to show that the text has been truncated.
+
+   class="truncate"
+
+   Example:
+   <div class="truncate">
+      Some really long paragraph of text expanding
+      multiple lines of text and we want to truncate this to
+      One line of text.
+   </div>
+
+   Output in the browser:
+      Some really long paragraph of tex...
+
+- By default <ul> elements have padding and bullet points. If you want to remove the default style, we would add the class to the <ul> element:
+
+   class="list-unstyled"
+
+   Example:
+   <ul class="list-unstyled"></ul>
+
+- If you want to create an inline list i.e. a horizontal list, we would use the classes to both the <ul> and <li> elements:
+
+   class="list-inline"
+   class="list-inline-item"
+
+   Example:
+   <ul class="list-inline">
+      <li class="list-inline-item">Item1</li>
+      <li class="list-inline-item">Item2</li>
+      <li class="list-inline-item">Item3</li>
+   </ul>
+
+   Output in the browser:
+   Item1 Item2 Item3
