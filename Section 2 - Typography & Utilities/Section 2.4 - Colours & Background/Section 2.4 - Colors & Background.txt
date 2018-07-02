@@ -1,0 +1,48 @@
+Section 2.4 Colours & Background:
+
+--------------------------------------
+Text Colours:
+--------------------------------------
+- There are certain classes you can use on just about any element to change the colour of the text of the background. Below are the bootstrap text-colour classes that we can use to colour the text (note: in bootstrap these are contextual colour):
+
+   BOOTSTRAP CLASS SYNTAX              DEFAULT BOOTSTRAP COLOUR
+   class="text-primary"                Blue
+   class="text-secondary"              Light Grey
+   class="text-success"                Green
+   class="text-info"                   Turquoise
+   class="text-warning"                Yellow
+   class="text-danger"                 Red
+   class="text-light"                  Very Light Grey
+   class="text-dark"                   Dark Grey
+   class="text-white"                  White
+   class="text-muted"                  Light Grey (same as text-secondary)
+   class="text-black-50"               Grey (alpha/opacity of black is 50%)
+   class="text-white-50"               White (alpha/opacity of white is 50%)
+
+> Note: you can alter the SASS file for the default colours for these colour class elements.
+
+--------------------------------------
+Background Colours:
+--------------------------------------
+- Same as the above but we use bg instead of text. This will colour the background of the html element.
+
+   class="bg-primary"
+   class="bg-secondary"
+   class="bg-success"
+   class="bg-info"
+   class="bg-warning"
+   class="bg-danger"
+   class="bg-light"
+   class="bg-dark text-light"
+   class="bg-white"
+   class="bg-transparent"           (used for if there was a background image behind)
+
+> Note: you can mix the text and background classes for example a blue background with white text:
+   class="bg-primary text-white"
+
+- This will change the visibility property of the element and sets it to hidden. This is different to display:none (display:none takes the element out of the html/DOM) where the element is still there within the DOM but you cannot see it.
+
+   class="invisible"
+
+
+Please refer to the 2_4_colours_background.html markup within the bootstrap_sandbox folder for examples of the above. To view what these would look like open the html file in your browser.
