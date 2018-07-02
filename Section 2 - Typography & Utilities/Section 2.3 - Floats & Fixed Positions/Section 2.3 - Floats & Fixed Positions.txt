@@ -1,0 +1,56 @@
+Section 2.3 Floats & Fixed Positions:
+
+--------------------------------------
+Float Classes:
+--------------------------------------
+- You can use the float classes to float the content to the left or right. If an element had a float on it you can remove the float by using the float-none class:
+
+   class="float-left"
+   class="float-right"
+   class="float-none"
+
+- You can also use responsive float classes that respond to break points (screen size) as we have seen similar to the text alignment responsive classes:
+
+   class="float-sm-left"
+   class="float-md-left"
+   class="float-lg-left"
+   class="float-xl-left"
+   class="float-sm-right"
+   class="float-md-right"
+   class="float-lg-right"
+   class="float-xl-right"
+   class="float-sm-none"
+   class="float-md-none"
+   class="float-lg-none"
+   class="float-xl-none"
+
+
+--------------------------------------
+Fixed Position Classes:
+--------------------------------------
+- When we float objects/elements we need the clearfix class to properly align elements else we would not achieve the effect that we originally wanted. Take the example in our html file, without the clearfix on the parent <div> element the element below i.e. the <h3> element will sit inbetween the floated buttons rather than below it. The clearfix class fixes this.
+
+   class="clearfix"
+
+   Example:
+   <div class="bg-success clearfix">
+      <button class="float-left">Float Left</button>
+      <button class="float-right">Float Right</button>
+   </div>
+> Note: remove the clearfix class from the <div> element (leave the bg-success class which will give the green background for the element container) and see the affects of not having the clearfix class on the parent element when we float the buttons to the left and right.
+
+
+-  You can fix elements to the top of the page, so regardless wherever you scroll on the page that element will remain at the top of the page:
+
+   class="fixed-top"
+
+- The sticky-top class will position the element to the top and stick it there once you scroll to that element on the page.
+
+   class="sticky-top"
+
+- Fix bottom is the same as the fixed-top class, instead it fixes the element to the bottom of the page:
+
+   class="fixed-bottom"
+
+
+Please refer to the 2_3_floats_position.html markup within the bootstrap_sandbox folder for examples of the above. To view what these would look like open the html file in your browser.
