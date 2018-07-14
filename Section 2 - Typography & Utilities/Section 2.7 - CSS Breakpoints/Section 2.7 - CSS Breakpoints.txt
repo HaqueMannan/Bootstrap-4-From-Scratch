@@ -1,0 +1,21 @@
+Section 2.7 CSS Breakpoints:
+
+--------------------------------------
+CSS Breakpoints:
+--------------------------------------
+- When you create projects and use bootstrap, you may want to add your own media queries because you may want to have custom CSS that only occur at certain screen widths i.e. certain devices.
+- Breakpoints are the different media queries and the sizes of the screen for the media queries. We can use the min-width to set the minimum width of a screen size for the media query:
+   > @media (min-width: 576px){}
+   > @media (min-width: 768px){}
+   > @media (min-width: 992px){}
+   > @media (min-width: 1200px){}
+- Note: whatever we put in within the curly braces {} will only take affect when the min-width query is satisfied. 
+
+- Alternatively we can use the max-width to set the media query of the max width size:
+   > @media (max-width: 575px){}
+   > @media (max-width: 767px){}
+   > @media (max-width: 991px){}
+   > @media (max-width: 1199px){}
+
+
+Please refer to the 2_7_breakpoints.html markup within the bootstrap_sandbox folder for examples of the above. To view what these would look like open the html file in your browser. Change the size of the browswer to test the different media queries at the different wdith sizes resembling the different consumer devices i.e. phone, tablet, pc.
