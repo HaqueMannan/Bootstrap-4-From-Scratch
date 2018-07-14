@@ -1,0 +1,49 @@
+Section 2.6 Sizing & Borders:
+
+--------------------------------------
+Sizing & Borders:
+--------------------------------------
+- The width class allows us to change the sizing of the width of a HTML content container:
+   > w-25
+   > w-50
+   > w-75
+   > w-100
+   > w-auto
+
+- The height class allows us to change the sizing of the height of a HTML content container:
+   > h-25
+   > h-50
+   > h-75
+   > h-100
+   > h-auto
+Note: the div container also has to have a height class in order to show the Bootstrap height classes.
+
+- Border classes allows us to add borders to the HTML content container:
+   > border
+   > border-top
+   > border-bottom
+   > border-right
+   > border-left
+
+- We can also add colour to the borders using the Boostrap colour classes. You will need to put the actual border class as seen above before adding in the border colour classes.
+   > border border-primary
+   > border border-secondary
+   > border border-success
+   > border border-info
+   > border border-warning
+   > border border-danger
+   > border border-light
+   > border border-dark
+   > border border-white
+
+- We have classes for the border radius which allows us to add curvature/roundness to the edges on the border. Note you must use the border class above to add the border before using the border radius classes. You can also add colour to the border using the above class as well:
+   > border rounded
+   > border rounded-top
+   > border rounded-bottom
+   > border rounded-right
+   > border rounded-left
+   > border rounded-circle
+   > border rounded-0            (this will wake the radius away if something had it by default).
+
+
+Please refer to the 2_6_sizing.html markup within the bootstrap_sandbox folder for examples of the above. To view what these would look like open the html file in your browser.
