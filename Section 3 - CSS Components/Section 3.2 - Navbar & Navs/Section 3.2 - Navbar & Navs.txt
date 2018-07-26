@@ -1,0 +1,82 @@
+Section 3.2 Navbar & Navs:
+
+--------------------------------------
+Navbar & Navs:
+--------------------------------------
+- We will look at creating Navbars and normal navigation using Bootstrap.
+- A container class will move all the html elements into the center/middle of the webpage. The container adds margin auto and gives max-width which changes on the screen size.
+
+- The core html markup for a navbar:
+   <nav>
+      <div>
+         <a href="#">Branding/Logo</a>
+         <ul>
+            <li>
+               <a href="#">Home<a>
+            </li>
+            <li>
+               <a href="#">About<a>
+            </li>
+         <ul>
+      <div>
+   <nav>
+
+- To create the navbar using Bootstrap we will use the following classes on the <nav> <div> <a> <ul> and <li> links:
+   <nav class="navbar navbar-expand-sm navbar-light bg-light mb-3">
+      <div class="container">
+         <a class="navbar-brand" href="#">Branding/Logo</a>
+         <ul class="navbar-nav">
+            <li class="nav-item">
+               <a class="nav-link" href="#">Home<a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">About<a>
+            </li>
+         <ul>
+      <div>
+   <nav>
+- The navbar-expand-sm class tells where we want the responsiveness to kick in. This will make the navbar items to move vertical rather than horizontal when it is at a small size screen.
+- The navbar-light class makes the text dark and the bg-light will make the navbar background colour a light grey.
+- The <ul> requires the class of navbar-nav and each <li> element requires the class of nav-item while each <a> link tag requires the class of nav-link.
+
+- To add the hamburger menu button for when the screen goes small we simply add a button class under the branding <a> element:
+   <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+- We need to add the attribute of data-toggle="collapse" to the button and add a target attribute of data-targer="#navbarNav" (the target can be called anything).
+- We will need to wrap the navbar <ul> in a <div> and add a id/class with the name of the target above. This will inform which element we wish to target with the button. The div will also need the bootstrap class of collapse navbar-collapse:
+   <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+         <li class="nav-item">
+            <a class="nav-link" href="#">Home<a>
+         </li>
+      </ul>
+   <div>
+- We use the <span> element within the <button> element to add the hamburger icon using the class navbar-toggler-icon.
+- To make the hamburger menu trigger on a medium, large or extra large screens, we would simply change nav trigger class:
+   <nav class="navbar navbar-expand-md navbar-light bg-light mb-3">
+   <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
+   <nav class="navbar navbar-expand-xl navbar-light bg-light mb-3">
+
+- The bootstrap dependencies are required in order for the dropdowns to work.
+
+- For navigations we can use the class nav nav-pills on the <ul> elements:
+   <ul class="nav nav-pills">
+      <li class="nav-item">
+         <a href="#" class="nav-link">Link 1</a>
+      <li>
+   </ul>
+
+- This will create a inline navigation links. To make one of the links active we would simply add the class of active:
+   <a href="#" class="nav-link active">Link 1</a>
+
+- To align the links we would add the class to the <ul> element:
+   <ul class="nav nav-pills justify-content-center">
+   <ul class="nav nav-pills justify-content-end">
+
+- To align vertical we would add the class to the <ul> element:
+   <ul class="nav nav-pills flex-column">
+
+- To fill and justify we would add the class to the <ul> element:
+   <ul class="nav nav-fill nav-pills">
+
+
+Please refer to the 3_2_navbar.html markup within the bootstrap_sandbox folder for examples of the above. To view what these would look like open the html file in your browser.
