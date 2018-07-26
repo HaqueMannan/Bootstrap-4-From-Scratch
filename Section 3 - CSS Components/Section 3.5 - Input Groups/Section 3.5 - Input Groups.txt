@@ -1,0 +1,37 @@
+Section 3.5 Input Groups:
+
+--------------------------------------
+Input Groups:
+--------------------------------------
+- Just like the form group, the input group joins input fields such as symbols/text etc.
+- To create a input group we would add the class of input-group to the div element. Note: you can put input groups within form groups as well. 
+- We can append and prepend text elements to the input element. Prepend will join to the front of the input field while append will join to the end of the input field:
+   <div class="input-group">
+      <div class="input-group-prepend">
+         <span class="input-group-text">@</span>
+      <div>
+      <input class="form-control" type="text" placeholder="Username">
+   </div>
+
+   <div class="input-group">
+      <input class="form-control" type="text" placeholder="Username">
+      <div class="input-group-append">
+         <span class="input-group-text">@something.com</span>
+      <div>
+   </div>
+
+- We can prepend and append onto a input field:
+   <div class="input-group">
+      <div class="input-group-prepend">
+         <span class="input-group-text">£</span>
+      <div>
+      <input class="form-control" type="text">
+      <div class="input-group-append">
+         <span class="input-group-text">.00</span>
+      <div>
+   </div>
+
+- We can also prepend/append check-boxes, radio buttons and form buttons using the same method above with the same classes i.e. input-group, input-group-prepend, input-group-append, input-group-text, form-control and btn classes.
+
+
+Please refer to the 3_5_input_groups.html markup within the bootstrap_sandbox folder for examples of the above. To view what these would look like open the html file in your browser.
