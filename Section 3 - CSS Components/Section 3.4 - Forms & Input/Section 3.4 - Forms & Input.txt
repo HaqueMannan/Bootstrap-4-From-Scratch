@@ -1,0 +1,37 @@
+Section 3.4 Forms & Input:
+
+--------------------------------------
+Forms & Input:
+--------------------------------------
+- Within our <form> we have <label> and <input> elements that are grouped within <div>. We use the <div> element to group the form elements together which helps separate each form group - the div is given the class of form-group to help group the various form elements:
+   <div class="form-group"></div>
+
+- To make the input look much better than the default browser style we would give the class of form-control. This will make the input a block level element and the label will sit above the input box:
+   <label for="name">Name</label>
+   <input class="form-control" type="text" id="name" placeholder="Enter Name">
+
+- To make a input field larger or smaller we can add the following class to the <input> element:
+   <input class="form-control form-control-lg" type="text" id="name" placeholder="Enter Name">
+   <input class="form-control form-control-sm" type="text" id="name" placeholder="Enter Name">
+
+- We can add text to the form by using form-text class and make the colour light grey by using the text-muted class:
+   <small class="form-text text-muted"></small>
+
+- The readonly attribute will make the input field a read only field i.e. you cannot enter anything within the field:
+   <input class="form-control" type="password" id="password" placeholder="Password" readonly>
+
+- The form-group and form-control classes also applies to select and text-area elements in the same way as the above.
+
+- Inline Forms are useful for creating login forms.
+
+- Bootstrap provides us with some classes that allows us to visually show form validation and validation messages:
+   <div class="form-group">
+      <input class="form-control is-valid type="text" id="username">
+      <input class="form-control is-invalid type="text" id="password">
+      <div class="invalid-feedback">password not strong enough</div>
+   </div>
+- If we do not have a is-invalid class within any of our input elements then the feedback message will not display in the browser due to the invalid-feedback class.
+- This is all the UI to the validation and not the logic behind the validation. We would use JavaScript for for the form validation logic.
+
+
+Please refer to the 3_4_forms.html markup within the bootstrap_sandbox folder for examples of the above. To view what these would look like open the html file in your browser.
