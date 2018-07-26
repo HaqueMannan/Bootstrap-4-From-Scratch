@@ -1,0 +1,50 @@
+Section 3.3 List Groups & Badges:
+
+--------------------------------------
+List Groups & Badges:
+--------------------------------------
+- List Groups are fancy unordered lists which can be used for things such as menus or listing out content etc.
+- To create a list group we use the class list-group:
+   <ul class="list-group">
+      <li class="list-group-item"></li>
+      <li class="list-group-item"></li>
+      <li class="list-group-item"></li>
+   </ul>
+
+- We can also create list groups with links - similar to the above:
+   <ul class="list-group">
+      <a href="#" class="list-group-item"></a>
+      <a href="#" class="list-group-item"></a>
+      <a href="#" class="list-group-item"></a>
+   </ul>
+
+- To make one or more of the links within the list group active we would use the active class on the list-group-item:
+   <li class="list-group-item active"></li>
+
+- We can add the contextual colour to our list-group-item by using the the colour classes:
+   <li class="list-group-item list-group-item-primary"></li>
+   <li class="list-group-item list-group-item-secondary"></li>
+   <li class="list-group-item list-group-item-success"></li>
+
+- The flush list group would group the list items without the left and right border:
+   <ul class="list-group list-group-flush">
+      <li class="list-group-item"></li>
+      <li class="list-group-item active"></li>
+      <li class="list-group-item"></li>
+   </ul>
+
+- We can add badges to our list class items for example number of views on a post:
+   <li class="list-group-item">MyPost
+      <span class="badge badge-danger">30</span>
+   </li>
+
+- We can add breadcrumbs which are made up of an ordered list:
+   <ol class="breadcrumb">
+      <li class"breadcrumb-item">
+         <a href="#">Home</a>
+      </li>
+      <li class="breadcrumb-item active">User</li>
+   </ol>
+
+
+Please refer to the 3_3_list_groups_badges.html markup within the bootstrap_sandbox folder for examples of the above. To view what these would look like open the html file in your browser.
