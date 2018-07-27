@@ -1,0 +1,53 @@
+Section 3.9 Media Objects:
+
+--------------------------------------
+Media Objects:
+--------------------------------------
+- Media Objects are images floated to a certain position with a title and text. They are tend to be used for news or small blog websites. Media Objects uses the flexbox for positions.
+- To turn an image into a media object we would use the bootstrap classes of media on the first <div> element and then on the second <div> element we would use the class of media-body:
+   <div class="media">
+      <img class="mr-3" src="">
+      <div class="media-body">
+         Some blog or news text.
+      </div>
+   </div>
+
+- We can nest media objects:
+
+   <div class="media">
+      <img class="mr-3" src="">
+      <div class="media-body">
+         Some blog or news text.
+      </div>
+
+      <div class="media">
+         <img class="mr-3" src="">
+         <div class="media-body">
+            Some blog or news text.
+         </div>
+      </div>
+   </div>
+
+- We can also align the image to be either top, center or bottom using the following classes of align-self-start, align-self-center and align-self-end. We can use the margin right class to give some padding between the image and text:
+   <img class="mr-3 align-self-start" src="">
+   <img class="mr-3 align-self-center" src="">
+   <img class="mr-3 align-self-end" src="">
+
+- We can have media objects within a list. To remove the bullet point styles from the list e would use the class list-unstyled which will get rid of the bullets and the padding. On each list item we can add the class media:
+   <ul class="list-unstyled">
+      <li class="media">
+         <img class="mr-3" src="">
+         <div class="media-body">
+            Some blog or news text
+         </div>
+      </li>
+      <li class="media">
+         <img class="mr-3" src="">
+         <div class="media-body">
+            Some blog or news text
+         </div>
+      </li>
+   </ul>
+
+
+Please refer to the 3_9_media_objects.html markup within the bootstrap_sandbox folder for examples of the above. To view what these would look like open the html file in your browser.
