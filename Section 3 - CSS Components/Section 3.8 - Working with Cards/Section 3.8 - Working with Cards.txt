@@ -1,0 +1,41 @@
+Section 3.8 Working with Cards:
+
+--------------------------------------
+Working with Cards:
+--------------------------------------
+- Cards are a new concept in Boostrap 4.
+- The simplest version of a card is a text wrapped in two <div> elements, the first with the class of card and the second with the class of card-body:
+   <div class="card">
+      <div class="card-body">
+         Some Card Text
+      </div>
+   </div>
+
+- Cards have a lot of different classes associated with them. We can use the optional classes of card-title, card-subtitle, card-header, card-footer, card-text, text-muted, text-white, card-img, card-img-top, card-image-overlay, img-fluid, bg-primary (any contextual colours), card-bodyquote, blockquote-footer:
+
+   <div class="card bg-info text-white">
+      <div class="card-header">
+         My Card
+      </div>
+      <img class="card-img-top img-fluid" src="" alt="">
+      <div class="card-body card-img-overlay">
+         <h4 class="card-title">Card Title</h4>
+         <p class="card-text">Some Card Text</p>
+      </div>
+      <div class="card-footer text-muted">
+         2 Days Ago
+      </div>
+      <blockquote class="card-blockquote">
+         <footer class="blockquote-footer">
+            <small>Some Famous Quote</small>
+         </footer>
+      </blockquote>
+   </div>
+
+- Important Note: images must come before the card-body. 
+- Cards have many different classes that can be used to allow you to make a custom card.
+
+- The card-column class allows you to have multiple cards aligned in a column grid, this gives a great mosaic tiles of cards effect.
+
+
+Please refer to the 3_8_cards.html markup within the bootstrap_sandbox folder for examples of the above. To view what these would look like open the html file in your browser.
