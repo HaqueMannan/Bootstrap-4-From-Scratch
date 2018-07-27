@@ -1,0 +1,42 @@
+Section 3.6 Alerts & Progress Bars:
+
+--------------------------------------
+Alerts:
+--------------------------------------
+- Alerts are usueful for when you are building applications where you have dynamic messages such as login and logout messages etc.
+- We can use the contextual colour classes, however we require a div with the class of alert to create a alert message:
+   <div class="alert alert-primary"></div>
+   <div class="alert alert-secondary"></div>
+   <div class="alert alert-success"></div>
+
+- Dismissible alerts allows you to x out the message and make them go away without you having to do any special JavaScript. We require the div to contain the alert-dismissible class and the button element requires the class of close and the attribute of data-dismiss="alert" as seen below:
+   <div class="alert alert-success alert-dismissible">
+      <button class="close" type="button" data-dismiss="alert">
+         <span>&times;<span>
+      </button>
+   </div>
+- Note: the &times; will give the X icon/character.
+
+
+--------------------------------------
+Progress Bars:
+--------------------------------------
+- To create a progress bar we require two <div> elements. The first <div> element will have the bootstrap class of progress - this will create a grey bar. The second <div> element will have the bootstrap class of progress-bar. This alone will not do anything, we would require a style attribute and add a width to colour the progress bar:
+   <div class="progress">
+      <div class="progress-bar" style="width:35%;"></div>
+   </div>
+
+- To add the % within the bar we can add the number text between the <div> element:
+   <div class="progress-bar" style="width:35%;">35%</div>
+
+- To add colour to the progress bar we would use the bg contextual colour classes:
+   <div class="progress-bar bg-success" style="width:35%;">35%</div>
+
+- We can change the height of the progress bar by adding the class to the progress <div> element:
+   <div class="progress" style="height:5px">
+
+- To make the progress bar striped we would use the class progress-bar-striped for the progress-bar <div> element. We can also make this animated using the progress-bar-animated class:
+   <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width:35%;">35%</div>
+
+
+Please refer to the 3_6_alert_progress.html markup within the bootstrap_sandbox folder for examples of the above. To view what these would look like open the html file in your browser.
