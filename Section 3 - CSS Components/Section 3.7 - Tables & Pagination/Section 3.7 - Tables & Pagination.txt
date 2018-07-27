@@ -1,0 +1,60 @@
+Section 3.7 Tables & Pagination:
+
+--------------------------------------
+Tables & Pagination:
+--------------------------------------
+- To update the table UI using Bootstrap, we would simply add the class table to the <table> element. This will add the bare minimum of styling to the table:
+   <table class="table"></table>
+
+- The class table-dark will inverse the colour:
+   <table class="table  table-dark"></table>
+
+- We can give the table header the class of thead-dark which will make the table heading background of black with white text:
+   <table class="table">
+      <thead class="thead-dark"></thead>
+   </table>
+
+- There are many CSS style variations we can use to style tables using Bootstrap classes.
+
+- To create a responsive table in bootstrap we would have to wrap the table in a <div> element which has the class of table-responsive. This would add a scrollbar for very small screen devices:
+   <div class="table-responsive">
+      <table class="table">
+         ...
+      </table>
+   </div>
+
+- Pagination is simply a <nav> with a <ul> and some <a> links. This acts as a naivigation to pages. Note: Bootstrap will not add the logic to move between pages, it will simply style the pagination. The <ul> will have the class of pagination while the <li> elements will have the class of page-item while the <a> element will have the class of page-link as seen below:
+   <nav>
+      <ul class="pagination">
+         <li class="page-item">
+            <a href="#" class="page-link">Previous</a>
+         </li>
+         <li class="page-item">
+            <a href="#" class="page-link">Next</a>
+         </li>
+      </ul>
+
+- To make one of the <li> elements active we would use the active class. To make a <li> disabled we would use the class disabled:
+   <li class="page-item active">
+   <li class="page-item disabled">
+
+- We can align the pagination to the center or right by using the classes on the <ul> element as well as making them large and small:
+   <ul class="pagination justify-content-center">
+   <ul class="pagination justify-content-end">
+   <ul class="pagination pagination-sm">
+   <ul class="pagination pagination-lg">
+
+- To create the left and right pointing arrows instead of using the Previous and Next text we would use two span elements to do this:
+   <a class="page-link" href="#">
+      <span>&laquo</span>
+      <span class="sr-only">Previous</span>
+   </a>
+   <a class="page-link" href="#">
+      <span>&raquo</span>
+      <span class="sr-only">Next</span>
+   </a>
+
+- We would use the character code &laquo; (left arrow) and &raquo; (right arrow) to show the arrows. The span with the class of sr-only will not display the text within the span due to the bootstrap class.
+
+
+Please refer to the 3_7_tables_pagination.html markup within the bootstrap_sandbox folder for examples of the above. To view what these would look like open the html file in your browser.
