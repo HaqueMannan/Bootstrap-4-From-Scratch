@@ -1,0 +1,85 @@
+Section 4.1 Grid System:
+
+--------------------------------------
+Grid System:
+--------------------------------------
+- This is one of the most important aspect of the Bootstrap framework. 
+- The grid system allows us to align html elements easily in our application/website while also being responsive.
+- The grid system is a 12 column based grid system hence we can have a 6 x 6 column grid or a 8 x 4 column grid, 9 x 3 column grid etc.
+- The wrap <div> element should have the class of row to instantiate the flexbox grid system. the second <div> element will have the class which will take control of the columns sizes. We can make these columns responsive by screen sizes. We would use the class for example col-sm-6 for a 6 column grid on a small screen:
+   <div class="row">
+      <div class="col-sm-6">
+         Content 1
+      </div>
+      <div class="col-sm-6">
+         Content 2
+      </div>
+   </div>
+
+- Whatever the largest class you use is going to extend to anything bigger than that i.e. it will always be a 6 x 6 grid unless it is an extra small screen, then the content will stack on top of each other. This is what makes flexbox nice and responsive on mobile devices.
+- We can more than one class for the different screen sizes, remember whichever is the largest will apply to the largest screen size (if lg and xl are not specified in the class):
+   <div class="row">
+      <div class="col-sm-6 col-md-8">
+         Content 1
+      </div>
+      <div class="col-sm-6 col-md-4">
+         Content 2
+      </div>
+   </div>
+
+- Example of all screen size specified classes (notice how each div classes will add to the 12 column):
+   <div class="row">
+      <div class="col-sm-6 col-md-8 col-lg-9 col-xl-10">
+         Content 1
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+         Content 2
+      </div>
+   </div>
+
+- You may not necessarily need different column size for every single screen sizes or you may not want to use the screen sizes at all, instead you could have equal width columns. Again you will need to use the class row to instantiate the flexbox grid system on the wrap <div> element. Each other <div> element will need the class of col to make them equal width columns:
+   <div class="row">
+      <div class="col">Content 1</div>
+      <div class="col">Content 2</div>
+      <div class="col">Content 3</div>
+   </div>
+- Note: even when the screen size is extra small, the content will not stack, they will continue to sit within the columns and wrap within the element container.
+
+- We can have auto layout which will take up whatever column spaces is left (in the example below the auto layout div can take up a maximum of 2 columns because 6+4=10-12=2):
+   <div class="row">
+      <div class="col">Content 1 - Auto Layout</div>
+      <div class="col-6">Content 2</div>
+      <div class="col-4">Content 3</div>
+   </div>
+
+- If you wish to have equal rows but you would want the content to stack on a small screen i.e. be completely responsive we would add the class of col-sm:
+   <div class="row">
+      <div class="col-sm">Content 1</div>
+      <div class="col-sm">Content 2</div>
+      <div class="col-sm">Content 3</div>
+   </div>
+
+- We can also change the display of the content within the browser (i.e. different to that of the markup) by using the order classes:
+   <div class="row">
+      <div class="col order-3">Content 1</div>
+      <div class="col order-2">Content 2</div>
+      <div class="col order-1">Content 3</div>
+   </div>
+
+- So far we have seen in the above examples which uses the full 12 columns of the flexbox grid system. However, we have a offset class that allows us to skip/offset some of the columns to push the content over to the right hand side.
+- For example we can have a 6 column grid offset by 3 columns. This should make the content sit within the middle because we will have 3 columns offset, content taking up 6 columns which leaves 3 columns at the end that is free. This is particularly useful for login forms:
+   <div class="row">
+      <div class="col-md-6 offset-md-3">Content</div>
+   </div>
+
+- Finally, we can nest flexbox grids within each other. You can nest as many rows as you would like:
+   <div class="row">
+      <div class="col-md-9>Level 1</div>
+      <div class="row">
+         <div class="col-8 col-sm-6">Level 2</div>
+         <div class="col-4 col-sm-6">Level 2</div>
+      </div>
+   </div>
+
+
+Please refer to the 4_1_grid_system.html markup within the bootstrap_sandbox folder for examples of the above. To view what these would look like open the html file in your browser.
