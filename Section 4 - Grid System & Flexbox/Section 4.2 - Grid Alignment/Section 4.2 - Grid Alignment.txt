@@ -1,0 +1,53 @@
+Section 4.2 Grid Alignment:
+
+--------------------------------------
+Grid Alignment:
+--------------------------------------
+- We can align the text/content within the grid by using the alignment classes.
+- Where we have the row class on the <div> element we would add the alignment classes:
+   <div class="row align-items-start">
+      <div class="col">
+         Vertical Text Alignment.
+      </div>
+   </div>
+
+   <div class="row justify-content-start">
+      <div class="col">
+         Vertical Text Alignment.
+      </div>
+   </div>
+
+- Where you wish to align the text content on an individual item/column these the alignment class must go on the <div> element that has the col class:
+   <div class="row">
+      <div class="col align-self-start">
+         Vertical Text Alignment.
+      </div>
+   </div>
+
+
+- The below tables will show the keywords required for aligning content:
+
+align-            Aligns the content vertically. This must be followed by the keywords in the below table.
+justify-content-  Aligns the content horizontally. This must be followed by the keywords in the table below.
+
+Keyword:    Definition:
+items-      Aligning all the flex container/columns items   (vertical alignment keyword)
+self-       Aligning an individual columns                  (vertical alignment keyword)
+
+keyword:    Vertical/Horizontal Alignment:
+start       left/top                                        (vertical & horizontal alignment keyword)
+center      center/middle                                   (vertical & horizontal alignment keyword)
+end         right/bottom                                    (vertical & horizontal alignment keyword)
+around      Add extra spacing around content                (horizontal alignment keyword)
+between     Add extra spacing inbetween the content         (horizontal alignment keyword)
+
+- We can use the above table to create the classes for example:
+   <div class="row align-item-start></div>
+   <div class="col align-self-right"></div>
+   <div class="row justify-content-around></div>
+
+- To remove the gutters (spacing inbetween) and add column wrapping we can use the class no-gutters on the wrap <div> element that has the row class. You may wish to use this on image galleries where you want the content to touch each other without any gaps/gutters:
+   <div class="row no-gutters></div>
+
+
+Please refer to the 4_2_grid_alignment.html markup within the bootstrap_sandbox folder for examples of the above. To view what these would look like open the html file in your browser.
