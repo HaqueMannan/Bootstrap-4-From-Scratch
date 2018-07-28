@@ -1,0 +1,30 @@
+Section 4.4 Auto Margin, Wrap & Ordering:
+
+--------------------------------------
+Auto Margin, Wrap & Ordering:
+--------------------------------------
+- To add a margin right auto to a div element we would add the class mr-auto (ml-auto adds margin left auto on the element). This will push the other items within the flex to the right or left.
+   <div class="mr-auto">Flex item</div>
+   <div class="ml-auto">Flex item</div>
+
+- To add a margin top or bottom we would need the d-flex flex-column class on the wrap <div> element to vertically align the flex items and then we can use the mt-auto and mb-auto classes on the selected elements:
+   <div class="d-flex flex-colomn">
+      <div class="mt-auto">Flex item</div>
+      <div class="mb-auto">Flex item</div>
+   </div>
+
+- Flexbox items by default have no wrap, but we can use the class flex-nowrap. However, we can use the class flex-wrap to make the flexbox items wrap.
+   <div class="d-flex flex-nowrap">
+   <div class="d-flex flex-wrap">
+- No wrap will make the items go off the page which will give a scrollbar at the bottom to scroll horizontally to see the items, whereas wrap will wrap all the items within the page screen i.e. no scrollbar.
+
+- Finally, just like the grid system we can order the flex items using the order class:
+   <div class="d-flex">
+      <div class="order-2">Flex item</div>
+      <div class="order-3">Flex item</div>
+      <div class="order-1">Flex item</div>
+      <div class="order-4">Flex item</div>
+   </div>
+
+
+Please refer to the 4_4_auto_margin_wrapping_order.html markup within the bootstrap_sandbox folder for examples of the above. To view what these would look like open the html file in your browser.
