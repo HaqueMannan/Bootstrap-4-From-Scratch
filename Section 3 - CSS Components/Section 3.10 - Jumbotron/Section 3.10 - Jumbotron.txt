@@ -1,0 +1,19 @@
+Section 3.10 Jumbotron:
+
+--------------------------------------
+Jumbotron:
+--------------------------------------
+- A Jumbotron is a kind of showcase area or a hero/header where you have a large heading with text underneath and sometimes a button or other content you want in it.
+- To create a Jumbotron, you will need a <div> that wraps around the content you wish to display in the jumbotron and this <div> element requires the bootstrap class of jumbotron:
+   <div class="jumbotron">
+      <h1 class="display-4">Jumbotron Heading</h1>
+      <p class="lead">Jumbotron text</p>
+   </div>
+
+- The rest of the content we can use the bootstrap classes that we saw in the previous sections.
+- To make the jumbotron fluid we would use the class jumbotron-fluid:
+   <div class="jumbotron jumbotron-fluid">
+   </div>
+
+
+Please refer to the 3_10_jumbotron.html markup within the bootstrap_sandbox folder for examples of the above. To view what these would look like open the html file in your browser.
