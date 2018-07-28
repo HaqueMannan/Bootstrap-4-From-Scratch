@@ -1,0 +1,43 @@
+Section 4.3 Flexbox Classes:
+
+--------------------------------------
+Flexbox Classes:
+--------------------------------------
+- The grid system uses flexbox but we can also use flexbox without the grid system on separate elements or whatever you would like e.g. paragraphs, images, links etc.
+- We can also use the same alignment classes as the grid system because the grid also uses flexbox.
+- The row-hl and item-hl classes has nothing to do with bootstrap, but it is used for demonstration purposes to visually show the item boxes and the positioning of them using the flexbox classes.
+- We use the class d-flex on our wrap <div> element for display flex - this will apply to the flex horizontally:
+   <div class="d-flex">
+      Content
+   </div>
+
+- We can use the same alignment class that we saw in the previous alignment section (horizontal alignment classes):
+   <div class="d-flex justify-content-start"></div>
+   <div class="d-flex justify-content-center"></div>
+   <div class="d-flex justify-content-end"></div>
+   <div class="d-flex justify-content-around"></div>
+   <div class="d-flex justify-content-between"></div>
+
+- We can use the class flex-column to display the flex vertically:
+   <div class="d-flex flex-column">
+      Content
+   </div>
+
+- Again we can use the alignment classes that we saw in the previous alignment section (vertical alignment classes):
+   <div class="d-flex align-item-start"></div>
+   <div class="d-flex align-item-center"></div>
+   <div class="d-flex align-item-end"></div>
+   <div class="d-flex align-item-baseline"></div>
+   <div class="d-flex align-item-stretch"></div>
+
+- We can also align individual elements using the align-self classes:
+   <div class="d-flex">
+      <div class="align-self-start"></div>
+      <div class="align-self-center"></div>
+      <div class="align-self-end"></div>
+      <div class="align-self-baseline"></div>
+      <div class="align-self-stretch"></div>
+   </div>
+
+
+Please refer to the 4_3_flexbox.html markup within the bootstrap_sandbox folder for examples of the above. To view what these would look like open the html file in your browser.
