@@ -1,0 +1,95 @@
+Section 5.1 - Carousel Slider:
+
+--------------------------------------
+Carousel Slider:
+--------------------------------------
+- We need to ensure that we have included jQuery, PopperJS and Bootstrap JavaCcript included within our HTML file in order for these to work (as they have dependencies on these script tags/libraries).
+
+- To create a simple Carousel we will need two <div> elements with the Bootstrap carousel classes and each image to be wrapped in another <div> element. 
+- The first wrap <div> element will need an id, a class of carousel slide and an attribute of data-ride="carousel":
+   <div id="slider1" class="carousel slider" data-ride="carousel">
+   </div>
+
+- The second <div> element will require a class of carousel-inner:
+   <div class="carousel-inner">
+   </div>
+
+- Each image wrapped in a <div> element will need a class of carousel-item:
+   <div class="carousel-item">
+      <img src="", alt=""></img>
+   </div>
+
+- Whichever image you want to show first when the page loads must have the class of active:
+   <div class="carousel-item active">
+      <img src="", alt=""></img>
+   </div>
+
+- We can add the class d-block and img-fluid on the image elements for it to keep its size in relation to its container for when the browser screen size changes:
+   <img class="d-block img-fluid" src="", alt=""></img>
+
+- The Carousel markup would look something like this. We can also add the grid to align the image to the centre of the page for presentation/aesthetics:
+   <div class="row">
+      <div class="col-sm-8 m-auto">
+         <div id="slider1" class="carousel slider" data-ride="carousel">
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <img class="d-block img-fluid" src="", alt=""></img>
+               </div>
+               <div class="carousel-item">
+                  <img class="d-block img-fluid" src="", alt=""></img>
+               </div>
+               <div class="carousel-item">
+                  <img class="d-block img-fluid" src="", alt=""></img>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+- We can add controls to our carousels by adding it inbetween the carousel slide and carousel-inner closing </div> elements. The controls are simply <a> tags with a class of carousel-control-prev or carousel-control-next and an attribute of data-slide="prev" or data-slide="next". The href will reference the id name of the carousel slider (i.e. the id name you gave in the first <div> element containing the carousel slider class). The <span> element will have a class of carousel-control-prev-icon or carousel-control-next-icon to give the left/right arrow icons:
+
+   <div id="slider1" class="carousel slider" data-ride="carousel">
+      <div class="carousel-inner">
+         ...
+      </div>
+      <a href="#slider1" class="carousel-control-prev" data-slide="prev">
+         <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a href="#slider1" class="carousel-control-next" data-slide="next">
+         <span class="carousel-control-next-icon"></span>
+      </a>
+   </div>
+
+- To add indicators to our carousel (indicators for the slide that we are on) we would add an ordered list elements, above the carousel-inner <div> element, with the class of carousel-indicators and then have <li> elements with an attribute of data-target with the id of the carousel slider and then specify what image this should show using the attribute data-slide-to="0". JavaScript uses 0 based referencing and so 0 represents the first image while 1 represents the second and so on. We would want the class of active on the first image only:
+   <div id="slider1" class="carousel slider" data-ride="carousel">
+      <ol class="carousel-indicators">
+         <li class="active" data-target="#slider3" data-slide-to="0"></li>
+         <li data-target="#slider3" data-slide-to="1"></li>
+         <li data-target="#slider3" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+         ...
+      </div>
+         ...
+   </div>
+
+- To add a caption for your image, we would add a <div> within your <img> element with the class of carousel-caption d-none d-md-block. The caption text will be within the <div> tags:
+   <div class="carousel-item active">
+      <img class="d-block img-fluid" src="", alt="">
+         <div class="carousel-caption d-none d-md-block">
+            <h3>Caption Header</h3>
+            <p>Some Caption Text</p>
+         </div>
+      </img>
+   </div>
+- Note: the d-md-block class is used to display the caption on a medium screen and above and to display as a block item i.e. fill the entire container across screen.
+
+- To change the intervals/settings of the carousel we can add <script> tags at the bottom of our html markup and use jQuery to edit some properties of our carousel:
+   <script>
+      $('.carousel').carousel({
+         interval: 2500,
+      });
+   </script>
+
+
+Please refer to the 5_1_carousel.html markup within the bootstrap_sandbox folder for examples of the above. To view what these would look like open the html file in your browser.
