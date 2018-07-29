@@ -1,0 +1,28 @@
+Section 5.4 - Popovers:
+
+--------------------------------------
+Popovers:
+--------------------------------------
+- Popovers are exactly similar and work similar to Tooltips.
+- Popovers require extra attributes on an element:
+   data-toggle="popover"
+   data-placement="top"                - this can be either top, bottom, left or right.
+   data-content="popover content"      - this is the content within the tooltip.
+
+- Popover Example:
+   <button data-toggle="popover" data-placement="top" data-content="Hello World">Popover</button>
+
+- We will need to initialise the Bootstrap popover using the <script> tags and jQuery to tell the browser that the data-toggle="popover" is going to actually run the popover.
+   <script>
+      $('[data-toggle="popover"]').popover();
+   </script>
+
+- For popovers you have to click the button rather than hover for it to display the text content. You also have to click for it to go away i.e. toggle on and off.
+
+- You can also do a dismissible popover whereby when you click on the element the popover will show but you have to click elsewhere other than the button the popover to hide. We simply require another attribute of data-trigger="focus" on the popover element:
+   <button data-toggle="popover" data-placement="top" data-content="Hello World" data-trigger="focus">Popover</button>
+
+- Popovers can be triggered usng JavaScript and we can also trigger event on the popover events of show, shown, hide and hidden (this is almost identical to the tooltips).
+
+
+Please refer to the 5_4_popovers.html markup within the bootstrap_sandbox folder for examples of the above. To view what these would look like open the html file in your browser.
