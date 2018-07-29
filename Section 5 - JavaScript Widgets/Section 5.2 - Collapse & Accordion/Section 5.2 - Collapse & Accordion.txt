@@ -1,0 +1,36 @@
+Section 5.2 - Collapse & Accordion:
+
+--------------------------------------
+Collapse & Accordion:
+--------------------------------------
+- We can add a collapse trigger on anything (generally on a button) by adding the attribute data-toggle="collapse" and data-target="#targetName" - the targetName can be called anything as the collapse requires a target object to have the id to collapse:
+   <button data-toggle="collapse" data-target="collapse-btn-1">Read More</btn>
+
+- On the wrap <div> element we will add the class of collapse and an id which is the same as the above data-target:
+   <div class="collapse" id="collapse-btn-1">
+      Collapsible text content.
+   </div>
+
+- Accordions are similar to collapsible as they are a essentially multiple collapsible items. The wrap <div> element requires an id as the accordion elements will need to make reference to this id.
+- The accordion element (clickable element i.e. the <a> tag) will need the href="#", data-parent attribute to reference the wrap <div> as well as the data-toggle="collapse" attribute. The div containing the collapse content will need an id name from the <a> tag href="#":
+   <div id="accordion">
+      <h5>
+         <a href="collapse1" data-parent="#accordion" data-toggle="collapse">
+            Collapse One
+         </a>
+         <div id="collapse1" class="collapse show">
+            Collapsible Text Content.
+         </div>
+         <a href="collapse2" data-parent="#accordion" data-toggle="collapse">
+            Collapse Two
+         </a>
+         <div id="collapse2" class="collapse">
+            Collapsible Text Content.
+         </div>
+      </h5>
+   </div>
+
+- The accordion with the class show will show the content by default and the content will not be collapsed when the page loads.
+
+
+Please refer to the 5_2_collapse.html markup within the bootstrap_sandbox folder for examples of the above. To view what these would look like open the html file in your browser.
