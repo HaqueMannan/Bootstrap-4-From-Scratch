@@ -1,0 +1,40 @@
+Section 5.5 - Modals:
+
+--------------------------------------
+Modals:
+--------------------------------------
+- A modal is like a light box that fades in content e.g. a login form or text content etc.
+- We require a <button> element to trigger the modal. On the button we require attributes of data-toggle="modal" and data-targer="#" - the target can be called whatever you like:
+   <button data-toggle="modal" data-target="#myModal">Modal Trigger</button>
+
+- The wrap <div> element should have the class of modal and the id the same of the data-target defined in the trigger button:
+   <div class="modal" id="myModal"></div>
+
+- We require a <div> elements that will have the class of modal-dialog and another <div> element with the class of modal-content (we can also have another <div> element with the class of div-header and we can also use the class of modal-title in the heading e.g. <h1> tags). This will format the modal.
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h5 class="modal-title">Title</h5>
+         </div>
+      </div>
+   </div>
+
+- We can also add the x icon button and the close button to our modal. The x icon (&times;) will need a class of close and the attribute of data-dismiss="modal". The close button must be wrapped in a <div> element with the class of modal-footer and the button must have the attribute of data-dismiss="modal".
+- The main content for the modal will be wrapped in a <div> element with the class of modal-body:
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h5 class="modal-title">Title</h5>
+            <button class="close" data-dismiss="modal">&times;</button>
+         </div>
+         <div class="modal-body">
+            Main Model Body Content.
+         </div>
+         <div class="modal-footer">
+            <button data-dismiss="modal">Close</button>
+         </div>
+      </div>
+   </div>
+
+
+Please refer to the 5_5_modals.html markup within the bootstrap_sandbox folder for examples of the above. To view what these would look like open the html file in your browser.
