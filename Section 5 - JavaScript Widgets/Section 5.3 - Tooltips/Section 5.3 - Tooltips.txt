@@ -1,0 +1,37 @@
+Section 5.3 - Tooltips:
+
+--------------------------------------
+Tooltips:
+--------------------------------------
+- You can have tooltips on about any element and this can appear whether you hover over an element or click the element.
+- Tooltips require extra attributes on an element:
+   data-toggle="tooltip"
+   data-placement="top"          - this can be either top, bottom, left or right.
+   title="tooltip content"       - this is the content within the tooltip.
+
+- Tooltip Example:
+   <button data-toggle="tooltip" data-placement="bottom" title="Hello World">Tooltip</button>
+
+- We will need to initialise the Bootstrap tooltip using the <script> tags and jQuery to tell the browser that the data-toggle="tooltip" is going to actually run the tooltip.
+   <script>
+      $('[data-toggle="tooltip"]').tooltip();
+   </script>
+
+- We can also add a tooltip with HTML - we require an extra attribute of data-html="true" to let the element know that the tooltip can parse html tags:
+   <button data-toggle="tooltip" data-placement="bottom" data-html="true" title="<h3>Hello World</h3> <p>This is a htmp tooltip</p>">HTML Tooltip</button>
+
+- We can also trigger any tooltip using JavaScript. We would add an id on the tooltip element so that we can target the tooltip element on the JavaScript event. The second element will have the JavaScript event trigger to call on the JavaScript fnction. The JavaScript events function will go in the <script> tags at the end on the HTML markup:
+   <button id="hello" data-toggle="tooltip" data-placement="bottom" title="Hello World">Tooltip</button>
+
+   <button onclick="showTooltip()">Show Tooltip JS Trigger</button>
+
+   <script>
+      function showTooltip(){
+         $(#hello).tooltip('toggle');
+      }
+   </script>
+
+- We can also run JavaScript code on tooltip events (same as the carousel) for the tooltip show, shown, hide and hidden events. In the 5_3_tooltips.html file we added Tooltip Events which triggers the function to console.log() the events when they occur.
+
+
+Please refer to the 5_3_tooltips.html markup within the bootstrap_sandbox folder for examples of the above. To view what these would look like open the html file in your browser.
