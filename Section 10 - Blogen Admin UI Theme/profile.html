@@ -7,7 +7,7 @@
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
       <link rel="stylesheet" href="css/style.css">
-      <title>Blogen Admin UI Theme - Details</title>
+      <title>Blogen Admin UI Theme - Profile</title>
    </head>
 
    <body>
@@ -63,7 +63,7 @@
             <div class="row">
                <div class="col-md-6">
                   <h1>
-                     Post One
+                     <i class="fas fa-user"></i> Edit Profile
                   </h1>
                </div>
             </div>
@@ -80,58 +80,51 @@
                   </a>
                </div>
                <div class="col-md-3">
-                  <a href="index.html" class="btn btn-success btn-block">
-                     <i class="fas fa-check"></i> Save Changes
+                  <a href="#" class="btn btn-success btn-block">
+                     <i class="fas fa-lock"></i> Change Password
                   </a>
                </div>
                <div class="col-md-3">
-                  <a href="index.html" class="btn btn-danger btn-block">
-                     <i class="fas fa-trash"></i> Delete Post
+                  <a href="#" class="btn btn-danger btn-block">
+                     <i class="fas fa-trash"></i> Delete Account
                   </a>
                </div>
             </div>
          </div>
       </section>
 
-      <!-- DETAILS -->
-      <section id="details">
+      <!-- PROFILE -->
+      <section id="profile">
          <div class="container">
             <div class="row">
-               <div class="col">
+               <div class="col-md-9">
                   <div class="card">
                      <div class="card-header">
-                        <h4>Edit Post</h4>
+                        <h4>Edit Profile</h4>
                      </div>
                      <div class="card-body">
                         <form>
                            <div class="form-group">
-                              <label for="title">Title</label>
-                              <input type="text" class="form-control" value="Post One">
+                              <label for="name">Name</label>
+                              <input type="text" class="form-control" value="Peter Parker">
                            </div>
                            <div class="form-group">
-                              <label for="category">Category</label>
-                              <select class="form-control">
-                                 <option value="" selected>Web Development</option>
-                                 <option value="">Tech Gadgets</option>
-                                 <option value="">Business</option>
-                                 <option value="">Health & Wellness</option>
-                              </select>
+                              <label for="email">Email</label>
+                              <input type="email" class="form-control" value="peter.p@blogen.com">
                            </div>
                            <div class="form-group">
-                              <label for="image">Upload Image</label>
-                              <div class="custom-file">
-                                 <input type="file" class="custom-file-input" id="image">
-                                 <label for="image" class="custom-file-label">Choose File</label>
-                              </div>
-                              <small class="form-text text-muted">Max Size 3mb</small>
-                           </div>
-                           <div class="form-group">
-                              <label for="body">Body</label>
-                              <textarea name="editor1" class="form-control">Repellat culpa nam cumque voluptatum. Possimus recusandae porro architecto officiis illo dignissimos ratione aut officia reprehenderit! Iure cum numquam fugit doloremque quis ullam illo odit, odio voluptates non quisquam laboriosam consectetur quasi perspiciatis! Sapiente minus aperiam nobis molestias autem ut praesentium laudantium?</textarea>
+                              <label for="bio">Bio</label>
+                              <textarea class="form-control" name="editor1">Aliquid unde at fugiat explicabo temporibus, tempora animi sunt iusto quod beatae optio veritatis velit natus odit error! Possimus esse quisquam quibusdam eveniet autem! Minus dolore quisquam nemo similique doloribus perspiciatis tempore.</textarea>
                            </div>
                         </form>
                      </div>
                   </div>
+               </div>
+               <div class="col-md-3">
+                  <h3>Your Avatar</h3>
+                  <img src="img/avatar.png" alt="" class="d-block img-fluid mb-3">
+                  <button class="btn btn-primary btn-block">Edit Image</button>
+                  <button class="btn btn-danger btn-block">Delete Image</button>
                </div>
             </div>
          </div>
